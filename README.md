@@ -2,7 +2,7 @@
 
 ## Prerequisites:
 * Have a copy of [https://github.ibm.com/alchemy-va/utils](https://github.ibm.com/alchemy-va/utils). We will use the scripts in the bin directory.
-* These scripts require some environment parameters to be set.
+* These scripts require some environment variables to be set.
 * Access to [https://hub.jazz.net/git/moosevan/vulnerability-advisor](https://hub.jazz.net/git/moosevan/vulnerability-advisor). 
 
 ## Debugging
