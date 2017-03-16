@@ -29,11 +29,11 @@
 
 10. The "hits" array is empty showing there are no results and "total: 0" confirms this. The “shards:successful:1150” and "failed =0" shows that ES has successfully queried all 1150 shards. This shows that the query to ES from CCSAPI is incorrect - as it is telling us ES knows no information on this image (but we know it does from step 5).
 
-11. At the front of the message there is an id like this: `“req-20824-1489570443.979-2184524”`. Search for this in kibana. with ` OR “req-20824-1489570443.979-2184524” `. When it’s working you should get _? . They are all of the entries from the registry, validation and CCSAPI to handle this request. 
-- Looking at the code for the CCSAPI (https://github.ibm.com/alchemy-containers/api/blob/master/cloud/VizioCloudBackend.py) 
-- Look at validate_image method…it shows the query to ES. For example, this is a query it made to ES : “url = "http://%s:9200/compliance-*/_search?pretty" % server”. The body of the curl is shown.
-- (This is called by https://github.ibm.com/alchemy-containers/api/blob/master/api/v3/app.py )
-- Use script es_ccsapi_query ? (get correct name). 
+11. At the front of the message there is an id like this: `“req-20824-1489570443.979-2184524”`. Add this to your kibana search that you made in step 8 with ` OR “req-20824-1489570443.979-2184524”`. When it’s working you should get ---? This shows all of the entries from the registry, validation and CCSAPI to handle this request.
+
+12. Go to the code for the CCSAPI: [https://github.ibm.com/alchemy-containers/api/blob/master/cloud/VizioCloudBackend.py.](https://github.ibm.com/alchemy-containers/api/blob/master/cloud/VizioCloudBackend.py)
+
+13. The validate_image method shows the query to ES. For example, this is a query it made to ES: `url = "http://%s:9200/compliance-*/_search?pretty" % server`. The body of the curl is shown. This is called by https://github.ibm.com/alchemy-containers/api/blob/master/api/v3/app.py )
 
 
 
