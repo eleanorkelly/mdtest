@@ -34,3 +34,7 @@
 - Look at validate_image method…it shows the query to ES. For example, this is a query it made to ES : “url = "http://%s:9200/compliance-*/_search?pretty" % server”. The body of the curl is shown.
 - (This is called by https://github.ibm.com/alchemy-containers/api/blob/master/api/v3/app.py )
 - Use script es_ccsapi_query ? (get correct name). 
+
+
+
+Note that rootkit annotator results are not seen by the UI.
