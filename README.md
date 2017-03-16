@@ -2,8 +2,8 @@
 
 ## Prerequisites:
 * Have a copy of [https://github.ibm.com/alchemy-va/utils](https://github.ibm.com/alchemy-va/utils). We will use the scripts in the bin directory.
+* These scripts require some environment parameters to be set.
 * Access to [https://hub.jazz.net/git/moosevan/vulnerability-advisor](https://hub.jazz.net/git/moosevan/vulnerability-advisor). 
-* 
 
 ## Debugging
 1. Push an image to your bluemix account. You can use the custTest script to do this.
@@ -32,8 +32,8 @@
 
 11. At the front of the message there is an id like this: `“req-20824-1489570443.979-2184524”`. Add this to your kibana search that you made in step 8 with ` OR “req-20824-1489570443.979-2184524”`. When it’s working you should get ---? This shows all of the entries from the registry, validation and CCSAPI to handle this request.
 
-12. Look at the code for the CCSAPI: [https://github.ibm.com/alchemy-containers/api/blob/master/cloud/VizioCloudBackend.py.](https://github.ibm.com/alchemy-containers/api/blob/master/cloud/VizioCloudBackend.py) The "validate_image" method shows the query to ES. For example, this is a query it made to ES: `url = "http://%s:9200/compliance-*/_search?pretty" % server`. The body of the curl is shown. This is called by [https://github.ibm.com/alchemy-containers/api/blob/master/api/v3/app.py](https://github.ibm.com/alchemy-containers/api/blob/master/api/v3/app.py)
+12. Look at the code for the CCSAPI: [https://github.ibm.com/alchemy-containers/api/blob/master/cloud/VizioCloudBackend.py](https://github.ibm.com/alchemy-containers/api/blob/master/cloud/VizioCloudBackend.py). The "validate_image" method shows the query to ES. For example, this is a query it made to ES: `url = "http://%s:9200/compliance-*/_search?pretty" % server`. The body of the curl is shown. This is called by [https://github.ibm.com/alchemy-containers/api/blob/master/api/v3/app.py](https://github.ibm.com/alchemy-containers/api/blob/master/api/v3/app.py)
 
 
 
-Note that rootkit annotator results are not seen by the UI.
+_Note that rootkit annotator results are not seen by the UI.
