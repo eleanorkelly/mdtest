@@ -21,10 +21,11 @@
 
 - Change timeframe filter to last 6 hours. Query on ID from vaccsapiquery - Put “ID” (in speech marks) in query text box at top. This shows all logs from things CCSAPI has done with this image. Select message field from left column. This shows messages - you should expect about 13 entries. 
 
-- The first entry is the post that the CF app did. Last one is the result of the post. In the contents section of the post results there should be a list of results. This is an example of a result which gives incomplete 
+- The first entry is the post that the CF app did. Last one is the result of the post. In the contents section of the post results there should be a list of results. This is an example of a result which gives incomplete: 
 
-
+```
 “Content={"hits": {"hits": [], "total": 0, "max_score": null}, "_shards": {"successful": 1150, "failed": 0, "total": 1150}, "took": 163, "nova": {"Image": "registry.ng.bluemix.net/brianpeacock/little-bad-image:20", "Id": "1de6d8045e2307f09612a1f4302575175587ef28af06c7cf1068465a5ac0b722", "Created": "1489498752"},”
+```
 
 - The hits array is empty showing there are no results and ‘total 0’ confirms this. The “shards:successful:1150” Shows that ES has successfully queried all 1150 shards (failed =0). This shows that the query to ES from CCSAPI is incorrect - ES knows no information on this image or the query is incorrect. 
 
