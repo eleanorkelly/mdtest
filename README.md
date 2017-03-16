@@ -5,9 +5,9 @@
 * Access to [https://hub.jazz.net/git/moosevan/vulnerability-advisor](https://hub.jazz.net/git/moosevan/vulnerability-advisor). 
 
 ## Debugging
-- Push an image to your bluemix account. You can use the custTest script to do this.
+1. Push an image to your bluemix account. You can use the custTest script to do this.
 
-- Log onto bluemix containers UI to check the status of the image.
+2. Log onto bluemix containers UI to check the status of the image.
 
 - For us, it said ‘incomplete’. 
 
