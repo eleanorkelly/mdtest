@@ -11,13 +11,13 @@
 
 - For us, it said ‘incomplete’. 
 
-- Look at kibana. This is linked to from the [prod dashboard](https://alchemy-prod.hursley.ibm.com/), go to 'view' then 'system events' for the correct region (where you pushed your image). Look at the VA_Workload dashboard. Filter on your namespace - this should show the image going through all the VA backend stages.
+- Look at kibana. This is linked to from the [alchemy dashboard](https://alchemy-prod.hursley.ibm.com/), go to 'view' then 'system events' for the correct region (where you pushed your image). Look at the VA_Workload dashboard. Filter on your namespace - this should show the image going through all the VA backend stages.
 
 - There is a utils/bin/vaapi script which can talk to VA-API and query ES. Use this to check your images results in ES.
 
 - If this shows valid results in ES, check CCSAPI is working using utils/bin/vaesccsapiquery script. This should return an ID. HOW???
 
-- Go to the alchemy [dashboard](https://alchemy-prod.hursley.ibm.com/), then view, then logs (for the correct region), then infrastructure, this will open kibana (different to the one we looked at earlier). 
+- Go to the [alchemy dashboard](https://alchemy-prod.hursley.ibm.com/), then view, then logs (for the correct region), then infrastructure, this will open kibana (different to the one we looked at earlier). 
 
 - Change timeframe filter to last 6 hours. Query on ID from vaccsapiquery - Put “ID” (in speech marks) in query text box at top. This shows all logs from things CCSAPI has done with this image. Select message field from left column. This shows messages - you should expect about 13 entries. 
 
