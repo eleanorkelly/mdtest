@@ -15,7 +15,11 @@
 
 3. For us, it said ‘incomplete’. 
 
-4. Look at kibana. This is linked to from the [alchemy dashboard](https://alchemy-prod.hursley.ibm.com/), go to 'view' then 'system events' for the correct region (where you pushed your image). Look at the VA_Workload dashboard. Filter on your namespace - this should show the image going through all the VA backend stages.
+4. Look at VA kibana. 
+ * dev, prestage and stage logs and graphs are available at: [https://logmet.stage1.ng.bluemix.net/app/](https://logmet.stage1.ng.bluemix.net/app/)
+ * prod-eu-gb logs and graphs are available at: [https://logmet.eu-gb.bluemix.net/app/](https://logmet.eu-gb.bluemix.net/app/)
+ * prod-us-south logs and graphs are available at: [https://logmet.ng.bluemix.net/app/](https://logmet.ng.bluemix.net/app/)
+ Look at the VA_Workload dashboard. Filter on your namespace - this should show the image going through all the VA backend stages.
 
 5. There is a utils/bin/vaapi script which can talk to VA-API and query ES. Use this to check your images results in ES.
 
