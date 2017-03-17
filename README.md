@@ -20,7 +20,7 @@
  * prod-eu-gb logs and graphs are available at: [https://logmet.eu-gb.bluemix.net/app/](https://logmet.eu-gb.bluemix.net/app/)
  * prod-us-south logs and graphs are available at: [https://logmet.ng.bluemix.net/app/](https://logmet.ng.bluemix.net/app/)
  
- Look at the VA_Workload dashboard. Filter on your namespace - this should show the image going through all the VA backend stages.
+ Look at the VA_Workload dashboard. Filter on your namespace - this should show the image going through all the VA backend stages. (You can get your namespace with the cmd `cf ic namespace get`.)
 
 5. There is a utils/bin/vaapi script which can talk to VA-API and query ES. Use this to check your images results in ES.
 
