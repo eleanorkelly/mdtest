@@ -16,9 +16,9 @@
 3. For us, it said ‘incomplete’. 
 
 4. Look at the VA_Workload dashboard in 'kibana 3' (see links below to kibana/graphana). Filter on your namespace - this should show the image going through all the VA backend stages. (You can get your namespace with the cmd `cf ic namespace get`.) Filter by adding a new filter where querystring=must and query="*NAMESPACE*". 
- * dev, prestage and stage logs and graphs are available at: [https://logmet.stage1.ng.bluemix.net/app/](https://logmet.stage1.ng.bluemix.net/app/)
- * prod-eu-gb logs and graphs are available at: [https://logmet.eu-gb.bluemix.net/app/](https://logmet.eu-gb.bluemix.net/app/)
- * prod-us-south logs and graphs are available at: [https://logmet.ng.bluemix.net/app/](https://logmet.ng.bluemix.net/app/)
+  * dev, prestage and stage logs and graphs are available at: [https://logmet.stage1.ng.bluemix.net/app/](https://logmet.stage1.ng.bluemix.net/app/)
+  * prod-eu-gb logs and graphs are available at: [https://logmet.eu-gb.bluemix.net/app/](https://logmet.eu-gb.bluemix.net/app/)
+  * prod-us-south logs and graphs are available at: [https://logmet.ng.bluemix.net/app/](https://logmet.ng.bluemix.net/app/)
 
 5. There is a utils/bin/vaapi script which can talk to VA-API and query ES. Use this to check your images results in ES.
 
