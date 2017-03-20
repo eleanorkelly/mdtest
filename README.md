@@ -6,6 +6,7 @@
   * VA_GIT_DIR - directory which contains the utils directory
   * BLUEMIX_USERID
   * PATH=$PATH:$VA_GIT_DIR/utils/bin - so that you can call the scripts from any directory
+  * VA_HOSTS_USER - user on the va machines
 * Access to [https://hub.jazz.net/git/moosevan/vulnerability-advisor](https://hub.jazz.net/git/moosevan/vulnerability-advisor). 
 
 ## Debugging
