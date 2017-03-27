@@ -14,7 +14,7 @@ ownership-details:
 
 
 ## PD incident
-For example **Logcrawler lag on prod-dal09-kraken1-host-21 is troubled**. [Link to example.](https://bluemix.pagerduty.com/incidents/P0ME98G)
+For example **"Logcrawler lag on prod-dal09-kraken1-host-21 is troubled"**. [Link to example.](https://bluemix.pagerduty.com/incidents/P0ME98G)
 
 
 ## Actions to take
