@@ -23,11 +23,9 @@ For example **Logcrawler lag on prod-dal09-kraken1-host-21 is troubled**. [Link 
   * ssh onto the host
   * Run the command `sudo service alchemy-logcrawler restart` to restart the logcrawler.
   * Monitor the Executive Dashboard to make sure the service recovers as expected. See links below.
-  
-  
-  - [Prod, Dallas](https://dashboard.rtp.raleigh.ibm.com/executive-dashboard#/default/va_prod_us_south/overview)
-  - [Prod, London](https://dashboard.rtp.raleigh.ibm.com/executive-dashboard#/default/va_prod_eu_gb/overview)
-  - [Stage, Dallas](https://dashboard.rtp.raleigh.ibm.com/executive-dashboard#/default/stage_dal09/overview)
+    * [Prod, Dallas](https://dashboard.rtp.raleigh.ibm.com/executive-dashboard#/default/va_prod_us_south/overview)
+    * [Prod, London](https://dashboard.rtp.raleigh.ibm.com/executive-dashboard#/default/va_prod_eu_gb/overview)
+    * [Stage, Dallas](https://dashboard.rtp.raleigh.ibm.com/executive-dashboard#/default/stage_dal09/overview)
 
 
   
